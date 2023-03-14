@@ -1,0 +1,16 @@
+<script type="module">
+  import {
+    ImageMagick,
+    initializeImageMagick,
+    Magick,
+    MagickFormat,
+    Quantum,
+  } from "./magick-wasm.mjs";
+
+  initializeImageMagick().then(() => {
+    console.log("Version:", Magick.imageMagickVersion);
+    console.log("Delegates:", Magick.delegates);
+    console.log("Features:", Magick.features);
+    console.log("Quantum:", Quantum.depth);
+  });
+</script>

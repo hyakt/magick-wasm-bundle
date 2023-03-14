@@ -1,0 +1,15 @@
+{
+  "name": "magick-wasm-bundle",
+  "version": "0.0.1",
+  "description": "bundle magick-wasm for esm",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "author": "Hayato Kajiyama <me@piginbeer.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
+    "@imagemagick/magick-wasm": "^0.0.19",
+    "esbuild": "^0.17.11"
+  }
+}
